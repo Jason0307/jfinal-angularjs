@@ -1,0 +1,24 @@
+package org.zhubao.generate.model;
+
+import com.jfinal.ext.plugin.tablebind.TableBind;
+import com.jfinal.plugin.activerecord.Model;
+import java.util.Date;
+
+@TableBind(tableName = "${model.tableName}", pkName = "${model.pkName}")
+public class ${model.name} extends Model<${model.name}>{
+<%for(attr in model.attrs){%>
+    private ${attr.type} ${attr.name};
+<%}%>
+<%for(attr in model.attrs){
+     var attrName = strutil.toUpperCase(strutil.subStringTo(attr.name,0,1)) + strutil.subString(attr.name,1);
+%>
+    public void set${attrName}(${attr.type} ${attr.name}){
+	    this.${attr.name} = ${attr.name};
+    }
+
+    public ${attr.type} get${attrName}(){
+        return ${attr.name};
+    }
+    
+<%}%>
+}

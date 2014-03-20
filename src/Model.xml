@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE Models SYSTEM "Model.dtd" >
+<Models db="jfinal-angular" package="org.zhubao.generate.model">
+	<Model name="User" tableName="z_user">
+		<Attr name="userId" pk="true" type="Integer"/>
+		<Attr name="username" type="String" db-size="50" not-null="true"/>
+		<Attr name="password" type="String" not-null="true"/>
+		<Attr name="email" type="String" not-null="true"/>
+		<Attr name="birth" type="Date" not-null="true"/>
+		<Attr name="icon" type="String" db-size="255"/>
+	</Model>
+	<Model name="Game" tableName="z_game">
+		<Attr name="gameId" pk="true" type="Integer"/>
+		<Attr name="gameName" type="String" db-size="50" not-null="true"/>
+		<Attr name="description" type="String" db-size="1000"/>
+		<Attr name="createdDate" type="Date" not-null="true"/>
+		<Attr name="icon" type="String" db-size="255"></Attr>
+   </Model>
+   <Model tableName="z_gamerecord" name="GameRecord">
+   		<Attr name="recordId" type="Long" pk="true"/>
+   		<Attr name="gameId" type="Integer" not-null="true"/>
+   		<Attr name="score" type="Integer"></Attr>
+   </Model>
+</Models>

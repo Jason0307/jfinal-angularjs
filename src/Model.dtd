@@ -1,0 +1,12 @@
+<!ELEMENT Models (Model*)>
+<!ELEMENT Model (Attr*)>
+<!ELEMENT Attr (#PCDATA)>
+<!ATTLIST Models db CDATA #REQUIRED>
+<!ATTLIST Models package CDATA #REQUIRED>
+<!ATTLIST Model name CDATA #REQUIRED>
+<!ATTLIST Model tableName CDATA #REQUIRED>
+<!ATTLIST Attr name CDATA #REQUIRED>
+<!ATTLIST Attr type CDATA #REQUIRED>
+<!ATTLIST Attr pk CDATA "false">
+<!ATTLIST Attr db-size CDATA "30">
+<!ATTLIST Attr not-null CDATA "true">
