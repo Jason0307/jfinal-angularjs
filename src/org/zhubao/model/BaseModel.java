@@ -56,4 +56,5 @@ public class BaseModel<M extends BaseModel<?>> extends Model<M> implements
 		records = Db.find(LIST_SQL);
 		return records;
 	}
+	
 }

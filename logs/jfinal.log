@@ -520,3 +520,51 @@ Caused by: java.sql.SQLException: Parameter index out of range (2 > number of pa
 
 2014-03-20 16:22:28
 [WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-03-20 18:05:42
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-03-20 18:05:59
+[WARN]-[Thread: qtp33058425-30]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /test/index
+
+2014-03-21 08:57:43
+[WARN]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED JFinal: java.lang.RuntimeException: Can not create instance of class: org.zhubao.config.AngularConfig. Please check the config in web.xml
+java.lang.RuntimeException: Can not create instance of class: org.zhubao.config.AngularConfig. Please check the config in web.xml
+	at com.jfinal.core.JFinalFilter.createJFinalConfig(JFinalFilter.java:99)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:47)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer$1.onChange(JettyServer.java:106)
+	at com.jfinal.server.Scanner.compare(Scanner.java:87)
+	at com.jfinal.server.Scanner.working(Scanner.java:56)
+	at com.jfinal.server.Scanner.access$0(Scanner.java:54)
+	at com.jfinal.server.Scanner$1.run(Scanner.java:93)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+2014-03-21 08:57:43
+[WARN]-[Thread: JFinal-Scanner]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/C:/jason/jfinal-angular/WebContent/}
+java.lang.RuntimeException: Can not create instance of class: org.zhubao.config.AngularConfig. Please check the config in web.xml
+	at com.jfinal.core.JFinalFilter.createJFinalConfig(JFinalFilter.java:99)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:47)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer$1.onChange(JettyServer.java:106)
+	at com.jfinal.server.Scanner.compare(Scanner.java:87)
+	at com.jfinal.server.Scanner.working(Scanner.java:56)
+	at com.jfinal.server.Scanner.access$0(Scanner.java:54)
+	at com.jfinal.server.Scanner$1.run(Scanner.java:93)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
