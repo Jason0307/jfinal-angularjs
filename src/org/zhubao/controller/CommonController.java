@@ -5,7 +5,7 @@ package org.zhubao.controller;
 
 import java.util.Date;
 
-import org.zhubao.model.Game;
+import org.zhubao.generate.model.Game;
 import org.zhubao.model.User;
 import org.zhubao.vo.ResponseVo;
 
@@ -21,6 +21,7 @@ import com.jfinal.ext.route.ControllerBind;
 public class CommonController extends Controller {
 
 	public void index() {
+		System.out.println(getModel(ResponseVo.class,"vo"));
 		System.out.println(Game.dao.findByAttrUnique("gameName", "First"));
 		System.out.println(Game.dao.findByList());
 		render("index.jsp");

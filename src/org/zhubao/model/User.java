@@ -3,6 +3,7 @@
  */
 package org.zhubao.model;
 
+import java.util.List;
 import java.util.Map;
 
 import org.zhubao.exception.AngularException;
@@ -41,4 +42,8 @@ public class User extends Model<User> {
 	public Map<String,Object> getAttrs(){
 		return super.getAttrs();
 	}
+
+	/* (non-Javadoc)
+	 * @see org.zhubao.model.BaseModel#showAttrs()
+	 */
 }

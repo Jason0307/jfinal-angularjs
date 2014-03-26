@@ -8,6 +8,8 @@ import java.util.Date;
 
 import org.zhubao.model.Game;
 import org.zhubao.util.ConstantsUtil;
+import org.zhubao.util.JsonUtil;
+import org.zhubao.vo.TestVo;
 
 import com.jfinal.core.Controller;
 import com.jfinal.ext.route.ControllerBind;
@@ -22,6 +24,9 @@ import com.jfinal.upload.UploadFile;
 @ControllerBind(controllerKey = "/game", viewPath = "/page/game/")
 public class GameController extends Controller{
 
+	public void index(){
+		render("index.jsp");
+	}
 	public void addGame(){
 		render("addGame.jsp");
 	}
@@ -34,6 +39,11 @@ public class GameController extends Controller{
 		String newName = System.currentTimeMillis() + "." + type;
 		file.renameTo(new File(saveDir + "/" + newName));
 		renderJson(ConstantsUtil.UPLOAD_DIR +"/" +newName);
+	}
+	
+	public void json(){
+		System.out.println(JsonUtil.parseRequestJson(getRequest(), TestVo.class));
+		renderJson("{\"success\":true}");
 	}
 	
 	public void save(){

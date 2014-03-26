@@ -3,7 +3,7 @@
  */
 package org.zhubao.util;
 
-import java.text.MessageFormat;
+import org.zhubao.model.Game;
 
 /**
  * @author Jason.Zhu
@@ -13,7 +13,6 @@ import java.text.MessageFormat;
 public class TestUtil {
 
 	public static void main(String[] args) {
-		String s = "SELECT * FROM z_game WHERE {0} = ?";
-		System.out.println(MessageFormat.format(s, "gameName"));
+	System.out.println(new Game().getAttrNames().length);
 	}
 }

@@ -40,6 +40,11 @@ public class ResponseVo {
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	@Override
+	public String toString() {
+		return "ResponseVo [success=" + success + ", msg=" + msg + "]";
+	}
+	
 	
 	
 }

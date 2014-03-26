@@ -94,8 +94,8 @@ public class XMLUtil {
 	 * @return
 	 */
 	public static String initTableSQL(List<Model> models, String database) {
-		StringBuilder sb = new StringBuilder("USE '").append(database).append(
-				"';\n\n");
+		StringBuilder sb = new StringBuilder("USE `").append(database).append(
+				"`;\n\n");
 		if (!models.isEmpty()) {
 			for (Model model : models) {
 				sb.append("DROP TABLE IF EXISTS ").append(model.getTableName())
@@ -121,11 +121,11 @@ public class XMLUtil {
 				if (attr.isPk()) {
 					pkName = attr.getName();
 					int pkSize = getPKSize(attrType);
-					sb.append("'").append(attr.getName()).append("' ")
+					sb.append("`").append(attr.getName()).append("` ")
 							.append(type).append("(").append(pkSize)
 							.append(") NOT NULL AUTO_INCREMENT,\n");
 				} else {
-					sb.append("'").append(attr.getName()).append("' ")
+					sb.append("`").append(attr.getName()).append("` ")
 							.append(type);
 					if (ConstantsUtil.DB_TYPE_STRING.equals(attrType)) {
 						sb.append("(").append(attr.getDbSize()).append(")");
@@ -136,9 +136,9 @@ public class XMLUtil {
 					sb.append(",\n");
 				}
 			}
-			sb.append("PRIMARY KEY ('")
+			sb.append("PRIMARY KEY (`")
 					.append(pkName)
-					.append("')\n")
+					.append("`)\n")
 					.append(") ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;\n\n");
 		}
 	}

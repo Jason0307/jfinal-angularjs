@@ -19,4 +19,6 @@ public interface ConstantsUtil {
 	public static final String DB_TYPE_DOUBLE = "Double";
 	public static final String DB_TYPE_FLOAT = "Float";
 	public static final String BEETL_ROOT_DIR = "/WEB-INF/template";
+	public static final int DEFAULT_PAGE_NUM = 1;
+	public static final int DEFAULT_PAGE_SIZE = 15;
 }

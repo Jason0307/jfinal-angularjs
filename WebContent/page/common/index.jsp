@@ -170,7 +170,6 @@
 				userModule.controller("DashboardController",function($scope){
 					console.log(1234);
 				})
-				
 </script>
 </body>
 </html>

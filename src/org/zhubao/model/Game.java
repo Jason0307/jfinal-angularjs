@@ -3,7 +3,10 @@
  */
 package org.zhubao.model;
 
+import java.util.List;
+
 import com.jfinal.ext.plugin.tablebind.TableBind;
+import com.jfinal.plugin.activerecord.Model;
 
 /**
  * @author Jason.Zhu
@@ -11,7 +14,7 @@ import com.jfinal.ext.plugin.tablebind.TableBind;
  * @email jasonzhu@augmentum.com.cn
  */
 @TableBind(tableName = "z_game", pkName = "gameId")
-public class Game extends BaseModel<Game> {
+public class Game extends Model<Game> {
 	private static final long serialVersionUID = 1L;
 	public static Game dao = new Game();
 	/*private String tableName;
@@ -31,4 +34,7 @@ public class Game extends BaseModel<Game> {
 		List<Game> games = Game.dao.find("SELECT * FROM " + tableName);
 		return games;
 	}*/
+	/* (non-Javadoc)
+	 * @see org.zhubao.model.BaseModel#showAttrs()
+	 */
 }
