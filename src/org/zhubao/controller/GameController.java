@@ -9,7 +9,6 @@ import java.util.Date;
 import org.zhubao.model.Game;
 import org.zhubao.util.ConstantsUtil;
 import org.zhubao.util.JsonUtil;
-import org.zhubao.vo.TestVo;
 
 import com.jfinal.core.Controller;
 import com.jfinal.ext.route.ControllerBind;
@@ -42,7 +41,7 @@ public class GameController extends Controller{
 	}
 	
 	public void json(){
-		System.out.println(JsonUtil.parseRequestJson(getRequest(), TestVo.class));
+		System.out.println(JsonUtil.parseRequestJson(getRequest(), Game.class));
 		renderJson("{\"success\":true}");
 	}
 	

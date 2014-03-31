@@ -36,7 +36,7 @@ public class UserController extends Controller {
 		String username = getPara("username");
 		String email = getPara("email");
 		String password = getPara("password");
-		String icon = "";
+		String icon = getPara("icon");
 		User user = new User();
 		user.set("username", username).set("password", password)
 				.set("email", email).set("icon", icon).set("birth", new Date())
@@ -46,12 +46,20 @@ public class UserController extends Controller {
 	}
 
 	public void update() {
-
-		User user = getModel(User.class);
-		System.out.println(user.get("username"));
+		// JsonUtil.parseRequestJson(getRequest(), User.class).update();
+		int userId = getParaToInt("userId", 0);
+		User user = User.dao.findById(userId);
+		String username = getPara("username");
+		String email = getPara("email");
+		String icon = getPara("icon");
+		user.set("username", username).set("email", email).set("icon", icon)
+				.set("updateDate", new Date()).update();
+		json();
 	}
 
 	public void delete() {
-
+		int userId = getParaToInt("ids", 0);
+		User.dao.findById(userId).delete();
+		json();
 	}
 }

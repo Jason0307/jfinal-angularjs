@@ -78,7 +78,7 @@ public class BaseController<M extends Model<M>> extends Controller {
 		ObjectMapper ob = new ObjectMapper();
 		T object  = null;
 		try {
-			if(objectClass.newInstance() instanceof Model){
+			if(Model.class.isAssignableFrom(objectClass)){
 				Model<?> model = (Model<?>) objectClass.newInstance();
 				Map<String,Object> attrMap = ob.readValue(jsonData.toString(), Map.class);
 				Set<Entry<String,Object>> entrySet = attrMap.entrySet();
