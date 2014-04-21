@@ -37,11 +37,11 @@
 					<div class="logo">
 						<a href=""></a>
 					</div>
-					<ul>
+					<ul ng-controller="CommonController">
 						<li><a href="#dashboard" id="targeted">${I18N.getText("index.home")}</a></li>
-						<li><a href="posts.html">posts</a></li>
-						<li><a href="#media">media</a></li>
-						<li><a href="#pages">pages</a></li>
+						<li><a ng-click="listUser()">User</a></li>
+						<li><a ng-click="listGame()">Game</a></li>
+						<li><a ng-click="showUserPie()">UserPie</a></li>
 						<li><a href="#links">links</a></li>
 						<li><a href="#comments">comments</a></li>
 						<li><a href="#widgets">widgets</a></li>
@@ -59,8 +59,8 @@
 						<li><a href="#">f</a></li>
 						<li><a href="#">n</a></li>
 					</ul>
-					<div class="mainContent clearfix">
-						<div id="dashboard">
+					<div id="mainContent">
+						<!-- <div id="dashboard">
 							<h2 class="header"><span class="icon"></span>Dashboard</h2>
 							<div class="monitor">
 								<h4>Right Now</h4>
@@ -75,7 +75,6 @@
 										<li class="pages"><span class="count">13</span><a href="">pages</a></li>
 										<li class="categories"><span class="count">21</span><a href="">categories</a></li>
 										<li class="tags"><span class="count">305</span><a href="">tags</a></li>
-									     -->
 									</ul>
 									<ul class="discussions">
 										<li>discussions</li>
@@ -128,7 +127,7 @@
 						</div>
 						<div id="settings">
 							<h2 class="header">settings</h2>
-						</div>
+						</div>-->
 					</div>
 					<ul class="statusbar">
 						<li><a href=""></a></li>
@@ -146,29 +145,54 @@
 <script type="text/javascript" charset="UTF-8" src="<%=request.getContextPath() %>/js/angular-route.min.js"></script>
 <script type="text/javascript" charset="UTF-8" src="<%=request.getContextPath() %>/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
-				(function() {
+			(function() {
 					var initTarget = document.getElementById("targeted");
-					initTarget.click();
+					//initTarget.click();
 				})();
 				var userModule = angular.module('myApp',['ngRoute']);
 				userModule.config(['$routeProvider',function ($routeProvider) {  
 				    $routeProvider  
-			        .when('/posts.html', {  
-			            templateUrl: 'views/route/list.html',  
-			            controller: 'DashboardController'  
-			        })  
+			        .when('/user/index', {  
+			            templateUrl: 'page/user/index.jsp',  
+			            controller: 'UserController'  
+			        })
+			        .when('/game/index', {  
+			            templateUrl: 'page/game/index.jsp',  
+			            controller: 'GameController'  
+			        })
+			        .when('/main.html', {  
+			            templateUrl: 'page/game/index.jsp',  
+			            controller: 'GameController'  
+			        })
 			        .otherwise({  
 			            redirectTo: '/index'  
 			        });  
 			}]); 
+				userModule.controller("CommonController",function($scope,$http){
+					$scope.listUser = function(){
+						$http.get('<%=request.getContextPath()%>/user/index').success(function(data){
+							$("#mainContent").html(data);
+						});
+					};
+					$scope.listGame = function(){
+						$http.get('<%=request.getContextPath()%>/game/index').success(function(data){
+							$("#mainContent").html(data);
+						});
+					}
+					
+					$scope.showUserPie = function(){
+						$http.get('<%=request.getContextPath()%>/user/pie').success(function(data){
+							$("#mainContent").html(data);
+						});
+					}
+					
+				})
 				userModule.controller("UserController",function($scope,$http){
-					$http.get('<%=request.getContextPath()%>/user/json').success(function(data){
-						$scope.users = data;
-					})
+					console.log("User");
 				})
 				
-				userModule.controller("DashboardController",function($scope){
-					console.log(1234);
+				userModule.controller("GameController",function($scope){
+					console.log("Game");
 				})
 </script>
 </body>

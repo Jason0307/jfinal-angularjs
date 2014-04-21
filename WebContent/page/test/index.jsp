@@ -11,7 +11,7 @@
 </head>
 <body>
 <table id="table_list" style="display: none"></table>
- <div class="jqmWindow" style="width: 300px;display: none" id="modelWin">
+ <div class="jqmWindow" style="width: 300px;" id="modelWin">
 			<div class="drag">
 				Model Info
 				<div class="close"></div>
@@ -72,10 +72,9 @@ for(var i = 0 ; i < arr.length; i++){
 	 searchItems[i] = sItem;
 }
 $("#table_list").flexigrid({
-    url : '<%=request.getContextPath() %>/user/list',
+    url : '<%=request.getContextPath() %>/test/list',
     dataType : 'json',
     colModel : colModelArr,
-    method : 'GET',
     buttons : [ {
         name : 'Add',
         bclass : 'add',
@@ -102,8 +101,8 @@ $("#table_list").flexigrid({
     useRp : true,
     rp : 15,
     showTableToggleBtn : true,
-    width : 782,
-    height : 462
+    width : 700,
+    height : 400
 });      
 
 var actions="";

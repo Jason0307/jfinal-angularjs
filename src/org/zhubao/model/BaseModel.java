@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
+import org.zhubao.util.ConstantsUtil;
 import org.zhubao.vo.GridModelVo;
 import org.zhubao.vo.RecordVo;
 
@@ -32,8 +33,8 @@ public abstract class BaseModel<M extends BaseModel<?>> extends Model<M> impleme
 	private static final long serialVersionUID = 1L;
 	private String tableName;
 	private String pkName;
-	private static String LIST_SQL = null;
-	private static String QUERY_ATTR_SQL = null;
+	private String LIST_SQL = null;
+	private String QUERY_ATTR_SQL = null;
 
 	@SuppressWarnings("unchecked")
 	public BaseModel() {
@@ -92,7 +93,11 @@ public abstract class BaseModel<M extends BaseModel<?>> extends Model<M> impleme
 				vo.setId(record.get(pkName).toString());
 				Map<String,Object> map = new HashMap<>();
 				for(String column : record.getcolumnNames()){
-					map.put(column, record.get(column));
+					Object value = record.get(column);
+					if(hasIcon(column)){
+						value = "<img src=\"/"+record.get(column)+"\">";
+					}
+					map.put(column, value);
 				}
 				vo.setCell(map);
 				recordVos.add(vo);
@@ -102,6 +107,22 @@ public abstract class BaseModel<M extends BaseModel<?>> extends Model<M> impleme
 		gridModelVo.setRows(recordVos);
 		gridModelVo.setTotal(pager.getTotalRow());
 		return gridModelVo;
+	}
+
+	/**
+	 * @param column
+	 * @return
+	 */
+	private boolean hasIcon(String column) {
+		boolean result = false;
+		String[] iconChars = ConstantsUtil.IMAGE_COLUMN.split(",");
+		for(String iconColumn : iconChars){
+			if(column.contains(iconColumn)){
+				result = true;
+				break;
+			}
+		}
+		return result;
 	}
 
 	public List<Record> findByList() {

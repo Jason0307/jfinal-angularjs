@@ -6,11 +6,11 @@ package org.zhubao.controller;
 import java.io.File;
 import java.util.Date;
 
-import org.zhubao.model.Game;
+import org.zhubao.generate.model.Game;
 import org.zhubao.util.ConstantsUtil;
 import org.zhubao.util.JsonUtil;
+import org.zhubao.vo.GridModelVo;
 
-import com.jfinal.core.Controller;
 import com.jfinal.ext.route.ControllerBind;
 import com.jfinal.upload.UploadFile;
 
@@ -21,11 +21,8 @@ import com.jfinal.upload.UploadFile;
  * @email jasonzhu@augmentum.com.cn
  */
 @ControllerBind(controllerKey = "/game", viewPath = "/page/game/")
-public class GameController extends Controller{
+public class GameController extends BaseController<Game>{
 
-	public void index(){
-		render("index.jsp");
-	}
 	public void addGame(){
 		render("addGame.jsp");
 	}
@@ -53,5 +50,4 @@ public class GameController extends Controller{
 		System.out.println(game.get("gameName"));
 		renderJson("{\"success\":true}");
 	}
-	
 }

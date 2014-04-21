@@ -3,6 +3,7 @@
  */
 package org.zhubao.config;
 
+import org.zhubao.interceptor.FakeStaticHandler;
 import org.zhubao.interceptor.GlobalInterceptor;
 import org.zhubao.model.BaseModel;
 
@@ -52,7 +53,7 @@ public class AngularConfig extends JFinalConfig {
 	 */
 	@Override
 	public void configHandler(Handlers me) {
-	//	me.add(new FakeStaticHandler());
+		me.add(new FakeStaticHandler());
 	}
 
 	/*

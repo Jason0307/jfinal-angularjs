@@ -7,10 +7,14 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.zhubao.vo.PieVo;
 
 /**
  * @author Jason.Zhu
@@ -20,8 +24,16 @@ import org.dom4j.io.SAXReader;
 public class XMLUtil {
 
 	public static void main(String[] args) throws Exception {
-		 String s = "org.zhubao.model";
-		 System.out.println(s.replace(".", "/"));
+		
+		JSONArray jsonArray = new JSONArray();
+			for(int i = 0; i < 4; i++){
+				PieVo vo = new PieVo();
+				vo.setName("jason" + i);
+				vo.setY(i);
+				JSONObject jsonObject = JSONObject.fromObject(vo);
+				jsonArray.add(jsonObject);
+			}
+		System.out.println("JSON Array : " + jsonArray);
 	}
 
 	@SuppressWarnings("unchecked")

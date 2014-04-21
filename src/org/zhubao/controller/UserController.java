@@ -6,9 +6,8 @@ package org.zhubao.controller;
 import java.util.Date;
 import java.util.List;
 
-import org.zhubao.model.User;
+import org.zhubao.generate.model.User;
 
-import com.jfinal.core.Controller;
 import com.jfinal.ext.route.ControllerBind;
 
 /**
@@ -17,21 +16,21 @@ import com.jfinal.ext.route.ControllerBind;
  * @email jasonzhu@augmentum.com.cn
  */
 @ControllerBind(controllerKey = "/user", viewPath = "/page/user/")
-public class UserController extends Controller {
+public class UserController extends BaseController<User> {
 
 	public void json() {
 		List<User> users = User.dao.find("SELECT * FROM z_user");
 		renderJson(users);
 	}
 
-	public void listUser() {
-
+	public void pie(){
+		render("pie.jsp");
 	}
-
-	public void index() {
-		render("index.jsp");
+	
+	public void pieData(){
+		renderJson(User.dao.getPieData());
 	}
-
+	
 	public void add() {
 		String username = getPara("username");
 		String email = getPara("email");

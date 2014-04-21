@@ -28,6 +28,12 @@ public class GlobalInterceptor implements Interceptor {
 					Const.DEFAULT_I18N_MAX_AGE_OF_COOKIE);
 		}
 		ai.invoke();
+		
+		String uri = c.getRequest().getRequestURI();
+		System.out.println("URI : " + uri);
+		if(uri.endsWith("/oauth2callback")){
+			System.out.println("Google Here");
+		}
 
 	}
 

@@ -17,20 +17,16 @@
 				<div class="close"></div>
 			</div>
 			<form id="saveModel" method="post">
-			    <input type="hidden" name="userId">
+			    <input type="hidden" name="gameId">
 				<table width="252" border="0" align="center"
 					cellpadding="0" cellspacing="0">
 					<tr>
-						<td>Username：</td>
-						<td><input type="text" name="username"></td>
+						<td>GameName：</td>
+						<td><input type="text" name="gameName"></td>
 					</tr>
 					<tr>
-						<td>Password：</td>
-						<td><input type="password" name="password"></td>
-					</tr>
-					<tr>
-						<td>Email：</td>
-						<td><input type="text" name="email"></td>
+						<td>Description：</td>
+						<td><input type="text" name="description"></td>
 					</tr>
 					<tr>
 						<td>Icon：</td>
@@ -72,7 +68,7 @@ for(var i = 0 ; i < arr.length; i++){
 	 searchItems[i] = sItem;
 }
 $("#table_list").flexigrid({
-    url : '<%=request.getContextPath() %>/user/list',
+    url : '<%=request.getContextPath() %>/game/list',
     dataType : 'json',
     colModel : colModelArr,
     method : 'GET',
@@ -113,11 +109,8 @@ function action(com, grid) {
 		    $("#saveModel input[type='text']").each(function() {
 			        $(this).val("");
 		        });
-		    $("#saveModel input[type='password']").each(function(){
-		    	 $(this).val("");
-		    })
 		     $('#saveModel').attr("action","add.action");
-		    actions="<%=request.getContextPath()%>/user/add";
+		    actions="<%=request.getContextPath()%>/game/add";
 		    $("#modelWin").jqmShow();
 		    break;
 	    case 'Edit' :
@@ -135,12 +128,11 @@ function action(com, grid) {
 		    	    var attrName = $(this).attr("abbr");
 			        data[attrName] = $(this).children('div').text();
 		        });
-		    $('#saveModel input[name="userId"]').val(data["userId"]);
-		    $('#saveModel input[name="password"]').val(data["password"]).attr("readonly","readonly");
-		    $('#saveModel input[name="username"]').val(data["username"]);
-		    $('#saveModel input[name="email"]').val(data["email"]);
+		    $('#saveModel input[name="gameId"]').val(data["gameId"]);
+		    $('#saveModel input[name="gameName"]').val(data["gameName"]);
+		    $('#saveModel input[name="description"]').val(data["description"]);
 		    $('#saveModel input[name="icon"]').val(data["icon"]);
-		    actions="<%=request.getContextPath()%>/user/update";
+		    actions="<%=request.getContextPath()%>/game/update";
 		    $("#modelWin").jqmShow();
 		    break;
 	    case 'Delete' :
@@ -162,7 +154,7 @@ function action(com, grid) {
 			        ids += $(this).text();
 		        })
 		    if (confirm("Are you sure to delete [" + names + "]?")) {
-			    delUser(ids);
+			    delGame(ids);
 		    }
 		    break;
     }
@@ -172,9 +164,9 @@ $("#modelWin").jqm({
     overlay : 60 
   }).jqmAddClose(".close").jqDrag(".drag");
 
-function delUser(ids) {
+function delGame(ids) {
     $.ajax({
-	        url : '<%=request.getContextPath()%>/user/delete',
+	        url : '<%=request.getContextPath()%>/game/delete',
 	        data : {
 		        ids : ids
 	        },
