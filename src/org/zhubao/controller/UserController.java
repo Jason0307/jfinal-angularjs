@@ -6,9 +6,13 @@ package org.zhubao.controller;
 import java.util.Date;
 import java.util.List;
 
+import org.zhubao.exception.AngularException;
 import org.zhubao.generate.model.User;
+import org.zhubao.generate.model.UserGame;
+import org.zhubao.util.ErrorCodeConstant;
 
 import com.jfinal.ext.route.ControllerBind;
+import com.jfinal.plugin.activerecord.Record;
 
 /**
  * @author Jason.Zhu
@@ -20,17 +24,17 @@ public class UserController extends BaseController<User> {
 
 	public void json() {
 		List<User> users = User.dao.find("SELECT * FROM z_user");
-		renderJson(users);
+		renderCustomJson(users);
 	}
 
-	public void pie(){
+	public void pie() {
 		render("pie.jsp");
 	}
-	
-	public void pieData(){
+
+	public void pieData() {
 		renderJson(User.dao.getPieData());
 	}
-	
+
 	public void add() {
 		String username = getPara("username");
 		String email = getPara("email");
@@ -61,4 +65,20 @@ public class UserController extends BaseController<User> {
 		User.dao.findById(userId).delete();
 		json();
 	}
+
+	public void join() {
+		int userId = getParaToInt("userId", 0);
+		int gameId = getParaToInt("gameId", 0);
+		assertUserExist(userId);
+		assertGameExsit(gameId);
+		Record record = UserGame.dao.findByUserIdAndGameId(userId, gameId);
+		if (null == record) {
+			UserGame uGame = new UserGame();
+			uGame.set("userId", userId).set("gameId", gameId)
+					.set("joinedDate", new Date()).save();
+			renderCustomJson(uGame);
+		}
+		throw new AngularException(ErrorCodeConstant.ALREADY_JOIN_GAME);
+	}
+
 }

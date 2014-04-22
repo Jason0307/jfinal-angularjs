@@ -14,8 +14,13 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.zhubao.exception.AngularException;
+import org.zhubao.generate.model.Game;
+import org.zhubao.generate.model.User;
 import org.zhubao.model.BaseModel;
 import org.zhubao.util.ConstantsUtil;
+import org.zhubao.util.ErrorCodeConstant;
+import org.zhubao.vo.JsonResponse;
 
 import com.jfinal.core.Controller;
 import com.jfinal.plugin.activerecord.Model;
@@ -28,8 +33,8 @@ import com.jfinal.plugin.activerecord.Model;
 public class BaseController<M extends Model<M>> extends Controller {
 
 	private BaseModel<?> dao;
-    private static Logger log = Logger.getLogger(BaseController.class);
-	
+	private static Logger log = Logger.getLogger(BaseController.class);
+
 	@SuppressWarnings("unchecked")
 	public BaseController() {
 
@@ -38,7 +43,7 @@ public class BaseController<M extends Model<M>> extends Controller {
 		try {
 			dao = (BaseModel<?>) modelClass.newInstance();
 		} catch (InstantiationException | IllegalAccessException e) {
-			log.error(e.getMessage(),e);
+			log.error(e.getMessage(), e);
 		}
 	}
 
@@ -49,16 +54,17 @@ public class BaseController<M extends Model<M>> extends Controller {
 		String query = getPara("query");
 		String sortname = getPara("sortname");
 		String sortorder = getPara("sortorder");
-		renderJson(dao.findByPagination(page,pagesize,qtype,query,sortname,sortorder));
+		renderJson(dao.findByPagination(page, pagesize, qtype, query, sortname,
+				sortorder));
 	}
-	
-	public void index(){
-		Object[] arr =  dao.showAttrs().toArray();
+
+	public void index() {
+		Object[] arr = dao.showAttrs().toArray();
 		StringBuilder sb = new StringBuilder();
-		if(0 != arr.length){
-			for(int i = 0; i < arr.length; i++){
+		if (0 != arr.length) {
+			for (int i = 0; i < arr.length; i++) {
 				sb.append(arr[i]);
-				if(1 != (arr.length -i)){
+				if (1 != (arr.length - i)) {
 					sb.append(",");
 				}
 			}
@@ -66,37 +72,69 @@ public class BaseController<M extends Model<M>> extends Controller {
 		setAttr("attrs", sb.toString());
 		render("index.jsp");
 	}
-	
-	@SuppressWarnings({"unchecked" })
+
+	@SuppressWarnings({ "unchecked" })
 	public <T> T parseRequestJson(Class<T> objectClass) {
 		HttpServletRequest request = getRequest();
 		Enumeration<String> enumStrs = request.getParameterNames();
 		StringBuilder jsonData = new StringBuilder();
-		while(enumStrs.hasMoreElements()){
+		while (enumStrs.hasMoreElements()) {
 			jsonData.append(enumStrs.nextElement());
 		}
 		ObjectMapper ob = new ObjectMapper();
-		T object  = null;
+		T object = null;
 		try {
-			if(Model.class.isAssignableFrom(objectClass)){
+			if (Model.class.isAssignableFrom(objectClass)) {
 				Model<?> model = (Model<?>) objectClass.newInstance();
-				Map<String,Object> attrMap = ob.readValue(jsonData.toString(), Map.class);
-				Set<Entry<String,Object>> entrySet = attrMap.entrySet();
-				for(Iterator<Entry<String,Object>> iter = entrySet.iterator();iter.hasNext();){
-					Entry<String,Object> entry = iter.next();
+				Map<String, Object> attrMap = ob.readValue(jsonData.toString(),
+						Map.class);
+				Set<Entry<String, Object>> entrySet = attrMap.entrySet();
+				for (Iterator<Entry<String, Object>> iter = entrySet.iterator(); iter
+						.hasNext();) {
+					Entry<String, Object> entry = iter.next();
 					String attr = entry.getKey();
 					Object attrValue = entry.getValue();
 					model.set(attr, attrValue);
 				}
 				object = (T) model;
-			}else{
+			} else {
 				object = ob.readValue(jsonData.toString(), objectClass);
 			}
 		} catch (Exception e) {
-			log.error(e.getMessage(),e);
+			log.error(e.getMessage(), e);
 		}
-		
+
 		return object;
 	}
+
+	/**
+	 * @param gameId
+	 */
+	public void assertGameExsit(int gameId) {
+		Game game = Game.dao.findById(gameId);
+		if (null == game) {
+			throw new AngularException(ErrorCodeConstant.GAME_NOT_EXIST);
+		}
+
+	}
+
+	/**
+	 * @param userId
+	 */
+	public void assertUserExist(int userId) {
+		User user = User.dao.findById(userId);
+		if (null == user) {
+			throw new AngularException(ErrorCodeConstant.USER_NOT_EXIST);
+		}
+
+	}
+
+	public void renderCustomJson(Object object) {
+		JsonResponse jsonResponse = new JsonResponse();
+		jsonResponse.setResponse(object);
+		super.renderJson(jsonResponse);
+	}
+
+	
 	
 }

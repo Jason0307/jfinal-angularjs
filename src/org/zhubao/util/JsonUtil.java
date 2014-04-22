@@ -3,6 +3,7 @@
  */
 package org.zhubao.util;
 
+import java.io.IOException;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.Map;
@@ -11,8 +12,12 @@ import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.zhubao.vo.GameResultVo;
 
 import com.jfinal.plugin.activerecord.Model;
 
@@ -57,5 +62,22 @@ public class JsonUtil {
 		}
 
 		return object;
+	}
+	/**
+	 * @param para
+	 * @param class1
+	 * @return
+	 * @throws IOException 
+	 * @throws JsonMappingException 
+	 * @throws JsonParseException 
+	 */
+	public static GameResultVo parseStringToVo(String data,
+			Class<GameResultVo> clazz) throws Exception {
+		ObjectMapper ob = new ObjectMapper();
+		if(!StringUtils.isBlank(data)){
+			GameResultVo gameResultVo = ob.readValue(data, clazz);
+			return gameResultVo;
+		}
+		return null;
 	}
 }

@@ -93,7 +93,7 @@ public class QuartzManager {
 			String oldTime = trigger.getCronExpression();
 			if (!oldTime.equalsIgnoreCase(time)) {
 				JobDetail jobDetail = sched.getJobDetail(jobName, JOB_GROUP_NAME);
-				Class objJobClass = jobDetail.getJobClass();
+				Class<?> objJobClass = jobDetail.getJobClass();
 				String jobClass = objJobClass.getName();
 				removeJob(jobName);
 

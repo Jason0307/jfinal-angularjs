@@ -139,11 +139,12 @@
 			</div>
 		</section>
 	</div>
-
+<script type="text/javascript" charset="UTF-8" src="<%=request.getContextPath() %>/js/jquery-1.8.min.js"></script>
 <script type="text/javascript" charset="UTF-8" src="<%=request.getContextPath() %>/js/prefixfree.min.js"></script>
 <script type="text/javascript" charset="UTF-8" src="<%=request.getContextPath() %>/js/angular.min.js"></script>
 <script type="text/javascript" charset="UTF-8" src="<%=request.getContextPath() %>/js/angular-route.min.js"></script>
-<script type="text/javascript" charset="UTF-8" src="<%=request.getContextPath() %>/js/jquery-2.1.0.min.js"></script>
+
+
 <script type="text/javascript">
 			(function() {
 					var initTarget = document.getElementById("targeted");

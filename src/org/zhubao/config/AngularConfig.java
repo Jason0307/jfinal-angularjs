@@ -3,6 +3,7 @@
  */
 package org.zhubao.config;
 
+import org.zhubao.interceptor.ExceptionHandler;
 import org.zhubao.interceptor.FakeStaticHandler;
 import org.zhubao.interceptor.GlobalInterceptor;
 import org.zhubao.model.BaseModel;
@@ -65,6 +66,7 @@ public class AngularConfig extends JFinalConfig {
 	@Override
 	public void configInterceptor(Interceptors i) {
 		i.add(new GlobalInterceptor());
+		i.add(new ExceptionHandler());
 	}
 
 	/*

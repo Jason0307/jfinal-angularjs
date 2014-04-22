@@ -94,7 +94,7 @@ public class User extends BaseModel<User>{
 				jsonArray.add(jsonObject);
 			}
 		}
-		System.out.println("JSON Array : " + jsonArray);
 		return jsonArray.toString();
 	}
+
 }

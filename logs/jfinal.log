@@ -5814,3 +5814,966 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 
 2014-04-18 13:27:29
 [WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-21 15:29:45
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-21 15:30:31
+[ERROR]-[Thread: qtp28048326-34]-[com.jfinal.core.ActionHandler.handle()]: /doLogin
+java.lang.NullPointerException
+	at org.zhubao.controller.CommonController.doLogin(CommonController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-21 15:30:32
+[ERROR]-[Thread: qtp28048326-35]-[com.jfinal.core.ActionHandler.handle()]: /doLogin
+java.lang.NullPointerException
+	at org.zhubao.controller.CommonController.doLogin(CommonController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-21 15:43:21
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-21 15:47:44
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-21 17:06:12
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 09:55:28
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 10:14:23
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 10:14:28
+[ERROR]-[Thread: qtp30178960-32]-[com.jfinal.core.ActionHandler.handle()]: /user/join
+java.lang.NumberFormatException: For input string: "${userId}"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:481)
+	at java.lang.Integer.parseInt(Integer.java:527)
+	at com.jfinal.core.Controller.toInt(Controller.java:212)
+	at com.jfinal.core.Controller.getParaToInt(Controller.java:230)
+	at org.zhubao.controller.UserController.join(UserController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 10:22:48
+[WARN]-[Thread: JFinal-Scanner]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 10:26:38
+[ERROR]-[Thread: qtp30178960-35]-[org.zhubao.util.JsonUtil.parseRequestJson()]: No content to map to Object due to end of input
+java.io.EOFException: No content to map to Object due to end of input
+	at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2433)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2385)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1591)
+	at org.zhubao.util.JsonUtil.parseRequestJson(JsonUtil.java:41)
+	at org.zhubao.controller.GameController.json(GameController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 10:26:38
+[ERROR]-[Thread: qtp30178960-28]-[com.jfinal.core.ActionHandler.handle()]: /user/join
+org.zhubao.exception.AngularException: 你已经加入过该游戏
+	at org.zhubao.controller.UserController.join(UserController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 10:45:25
+[WARN]-[Thread: JFinal-Scanner]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 10:45:31
+[ERROR]-[Thread: qtp30178960-35]-[org.zhubao.util.JsonUtil.parseRequestJson()]: No content to map to Object due to end of input
+java.io.EOFException: No content to map to Object due to end of input
+	at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2433)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2385)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1591)
+	at org.zhubao.util.JsonUtil.parseRequestJson(JsonUtil.java:41)
+	at org.zhubao.controller.GameController.json(GameController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 10:45:31
+[ERROR]-[Thread: qtp30178960-28]-[com.jfinal.core.ActionHandler.handle()]: /user/join
+org.zhubao.exception.AngularException: 你已经加入过该游戏
+	at org.zhubao.controller.UserController.join(UserController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 10:47:36
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 10:48:02
+[ERROR]-[Thread: qtp13391897-34]-[org.zhubao.util.JsonUtil.parseRequestJson()]: No content to map to Object due to end of input
+java.io.EOFException: No content to map to Object due to end of input
+	at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2433)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2385)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1591)
+	at org.zhubao.util.JsonUtil.parseRequestJson(JsonUtil.java:41)
+	at org.zhubao.controller.GameController.json(GameController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.ExceptionHandler.intercept(ExceptionHandler.java:26)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 10:56:13
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 10:57:20
+[ERROR]-[Thread: qtp8986844-33]-[org.zhubao.util.JsonUtil.parseRequestJson()]: No content to map to Object due to end of input
+java.io.EOFException: No content to map to Object due to end of input
+	at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2433)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2385)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1591)
+	at org.zhubao.util.JsonUtil.parseRequestJson(JsonUtil.java:41)
+	at org.zhubao.controller.GameController.json(GameController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.ExceptionHandler.intercept(ExceptionHandler.java:31)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 11:04:42
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 11:04:47
+[ERROR]-[Thread: qtp12037402-37]-[org.zhubao.util.JsonUtil.parseRequestJson()]: No content to map to Object due to end of input
+java.io.EOFException: No content to map to Object due to end of input
+	at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2433)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2385)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1591)
+	at org.zhubao.util.JsonUtil.parseRequestJson(JsonUtil.java:41)
+	at org.zhubao.controller.GameController.json(GameController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.ExceptionHandler.intercept(ExceptionHandler.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 11:07:12
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 11:07:40
+[ERROR]-[Thread: qtp30178960-33]-[org.zhubao.util.JsonUtil.parseRequestJson()]: No content to map to Object due to end of input
+java.io.EOFException: No content to map to Object due to end of input
+	at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2433)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2385)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1591)
+	at org.zhubao.util.JsonUtil.parseRequestJson(JsonUtil.java:41)
+	at org.zhubao.controller.GameController.json(GameController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.ExceptionHandler.intercept(ExceptionHandler.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 11:07:40
+[ERROR]-[Thread: qtp30178960-35]-[com.jfinal.core.ActionHandler.handle()]: /user/join
+java.lang.ClassCastException: java.lang.NumberFormatException cannot be cast to org.zhubao.exception.AngularException
+	at org.zhubao.interceptor.ExceptionHandler.intercept(ExceptionHandler.java:32)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 11:09:38
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 11:09:42
+[ERROR]-[Thread: qtp13391897-30]-[org.zhubao.util.JsonUtil.parseRequestJson()]: No content to map to Object due to end of input
+java.io.EOFException: No content to map to Object due to end of input
+	at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2433)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2385)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1591)
+	at org.zhubao.util.JsonUtil.parseRequestJson(JsonUtil.java:41)
+	at org.zhubao.controller.GameController.json(GameController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.ExceptionHandler.intercept(ExceptionHandler.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 13:35:26
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 13:36:41
+[ERROR]-[Thread: qtp30178960-31]-[org.zhubao.util.JsonUtil.parseRequestJson()]: No content to map to Object due to end of input
+java.io.EOFException: No content to map to Object due to end of input
+	at org.codehaus.jackson.map.ObjectMapper._initForReading(ObjectMapper.java:2433)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2385)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1591)
+	at org.zhubao.util.JsonUtil.parseRequestJson(JsonUtil.java:41)
+	at org.zhubao.controller.GameController.json(GameController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:55)
+	at org.zhubao.interceptor.ExceptionHandler.intercept(ExceptionHandler.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:30)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:724)
+
+2014-04-22 13:37:41
+[WARN]-[Thread: JFinal-Scanner]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 14:01:47
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 14:36:20
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 14:36:20
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED JFinal: java.lang.NoClassDefFoundError: com/google/common/base/Throwables
+java.lang.NoClassDefFoundError: com/google/common/base/Throwables
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Throwables
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383)
+	... 20 more
+
+2014-04-22 14:36:20
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED o.e.j.w.WebAppContext{/,file:/C:/jason/jfinal-angular/WebContent/}: java.lang.NoClassDefFoundError: com/google/common/base/Throwables
+java.lang.NoClassDefFoundError: com/google/common/base/Throwables
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Throwables
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383)
+	... 20 more
+
+2014-04-22 14:36:20
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED org.eclipse.jetty.server.Server@bac4b1: java.lang.NoClassDefFoundError: com/google/common/base/Throwables
+java.lang.NoClassDefFoundError: com/google/common/base/Throwables
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Throwables
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383)
+	... 20 more
+
+2014-04-22 14:40:55
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 14:40:56
+[ERROR]-[Thread: main]-[com.jfinal.core.Config.startPlugins()]: Plugin start error: com.jfinal.ext.plugin.quartz.QuartzPlugin. 
+java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+java.lang.RuntimeException: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.google.common.base.Throwables.propagate(Throwables.java:147)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at org.quartz.CronExpression.buildExpression(CronExpression.java:457)
+	at org.quartz.CronExpression.<init>(CronExpression.java:255)
+	at org.quartz.CronTrigger.setCronExpression(CronTrigger.java:471)
+	at org.quartz.CronTrigger.<init>(CronTrigger.java:302)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:64)
+	... 19 more
+
+2014-04-22 14:40:56
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED JFinal: java.lang.RuntimeException: Plugin start error: com.jfinal.ext.plugin.quartz.QuartzPlugin. 
+java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+java.lang.RuntimeException: Plugin start error: com.jfinal.ext.plugin.quartz.QuartzPlugin. 
+java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.jfinal.core.Config.startPlugins(Config.java:88)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.lang.RuntimeException: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.google.common.base.Throwables.propagate(Throwables.java:147)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	... 18 more
+Caused by: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at org.quartz.CronExpression.buildExpression(CronExpression.java:457)
+	at org.quartz.CronExpression.<init>(CronExpression.java:255)
+	at org.quartz.CronTrigger.setCronExpression(CronTrigger.java:471)
+	at org.quartz.CronTrigger.<init>(CronTrigger.java:302)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:64)
+	... 19 more
+
+2014-04-22 14:40:56
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/C:/jason/jfinal-angular/WebContent/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.ext.plugin.quartz.QuartzPlugin. 
+java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.jfinal.core.Config.startPlugins(Config.java:88)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.lang.RuntimeException: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.google.common.base.Throwables.propagate(Throwables.java:147)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	... 18 more
+Caused by: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at org.quartz.CronExpression.buildExpression(CronExpression.java:457)
+	at org.quartz.CronExpression.<init>(CronExpression.java:255)
+	at org.quartz.CronTrigger.setCronExpression(CronTrigger.java:471)
+	at org.quartz.CronTrigger.<init>(CronTrigger.java:302)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:64)
+	... 19 more
+
+2014-04-22 14:42:02
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 14:42:02
+[ERROR]-[Thread: main]-[com.jfinal.core.Config.startPlugins()]: Plugin start error: com.jfinal.ext.plugin.quartz.QuartzPlugin. 
+java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+java.lang.RuntimeException: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.google.common.base.Throwables.propagate(Throwables.java:147)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at org.quartz.CronExpression.buildExpression(CronExpression.java:457)
+	at org.quartz.CronExpression.<init>(CronExpression.java:255)
+	at org.quartz.CronTrigger.setCronExpression(CronTrigger.java:471)
+	at org.quartz.CronTrigger.<init>(CronTrigger.java:302)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:64)
+	... 19 more
+
+2014-04-22 14:42:02
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED JFinal: java.lang.RuntimeException: Plugin start error: com.jfinal.ext.plugin.quartz.QuartzPlugin. 
+java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+java.lang.RuntimeException: Plugin start error: com.jfinal.ext.plugin.quartz.QuartzPlugin. 
+java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.jfinal.core.Config.startPlugins(Config.java:88)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.lang.RuntimeException: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.google.common.base.Throwables.propagate(Throwables.java:147)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	... 18 more
+Caused by: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at org.quartz.CronExpression.buildExpression(CronExpression.java:457)
+	at org.quartz.CronExpression.<init>(CronExpression.java:255)
+	at org.quartz.CronTrigger.setCronExpression(CronTrigger.java:471)
+	at org.quartz.CronTrigger.<init>(CronTrigger.java:302)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:64)
+	... 19 more
+
+2014-04-22 14:42:02
+[WARN]-[Thread: main]-[org.eclipse.jetty.webapp.WebAppContext.doStart()]: Failed startup of context o.e.j.w.WebAppContext{/,file:/C:/jason/jfinal-angular/WebContent/}
+java.lang.RuntimeException: Plugin start error: com.jfinal.ext.plugin.quartz.QuartzPlugin. 
+java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.jfinal.core.Config.startPlugins(Config.java:88)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:68)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+Caused by: java.lang.RuntimeException: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at com.google.common.base.Throwables.propagate(Throwables.java:147)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:66)
+	at com.jfinal.core.Config.startPlugins(Config.java:78)
+	... 18 more
+Caused by: java.text.ParseException: Support for specifying both a day-of-week AND a day-of-month parameter is not implemented.
+	at org.quartz.CronExpression.buildExpression(CronExpression.java:457)
+	at org.quartz.CronExpression.<init>(CronExpression.java:255)
+	at org.quartz.CronTrigger.setCronExpression(CronTrigger.java:471)
+	at org.quartz.CronTrigger.<init>(CronTrigger.java:302)
+	at com.jfinal.ext.plugin.quartz.QuartzPlugin.start(QuartzPlugin.java:64)
+	... 19 more
+
+2014-04-22 14:42:44
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 14:43:12
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 14:44:11
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 14:49:38
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.

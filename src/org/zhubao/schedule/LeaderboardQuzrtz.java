@@ -6,20 +6,25 @@ package org.zhubao.schedule;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
+import org.zhubao.generate.model.Leaderboard;
 
 /**
  * @author Jason.Zhu
- * @date   2014-1-6
+ * @date 2014-1-6
  * @email jasonzhu@augmentum.com.cn
  */
-public class LeaderboardQuzrtz implements Job{
+public class LeaderboardQuzrtz implements Job {
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.quartz.Job#execute(org.quartz.JobExecutionContext)
 	 */
 	@Override
-	public void execute(JobExecutionContext context) throws JobExecutionException {
-
+	public void execute(JobExecutionContext context)
+			throws JobExecutionException {
+		Leaderboard.dao.clearLeaderboard();
+		Leaderboard.dao.updateLeaderboard();
 	}
 
 }
