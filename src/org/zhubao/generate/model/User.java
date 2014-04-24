@@ -83,13 +83,15 @@ public class User extends BaseModel<User>{
 	 */
 	public String getPieData() {
 		
-		List<Record> users = User.dao.findByList();
+		List<Record> users = Leaderboard.dao.findByList();
 		JSONArray jsonArray = new JSONArray();
 		if(!users.isEmpty()){
 			for(Record record : users){
 				PieVo vo = new PieVo();
-				vo.setName(record.get("username").toString());
-				vo.setY((int)record.get("userId"));
+				int userId = record.get("userId");
+				User user = User.dao.findById(userId);
+				vo.setName(user.get("username").toString());
+				vo.setY((int)record.get("rank"));
 				JSONObject jsonObject = JSONObject.fromObject(vo);
 				jsonArray.add(jsonObject);
 			}

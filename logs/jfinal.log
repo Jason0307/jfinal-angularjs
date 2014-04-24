@@ -6777,3 +6777,281 @@ Caused by: java.text.ParseException: Support for specifying both a day-of-week A
 
 2014-04-22 14:49:38
 [WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 15:38:06
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 15:59:26
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 16:13:36
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-22 17:18:20
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 14:45:42
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 14:49:49
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 14:49:50
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED JFinal: java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+	at com.jfinal.core.JFinal.initActiveRecord(JFinal.java:117)
+	at com.jfinal.core.JFinal.init(JFinal.java:74)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+
+2014-04-24 14:49:50
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED o.e.j.w.WebAppContext{/,file:/C:/jason/jfinal-angular/WebContent/}: java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+	at com.jfinal.core.JFinal.initActiveRecord(JFinal.java:117)
+	at com.jfinal.core.JFinal.init(JFinal.java:74)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+
+2014-04-24 14:49:50
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED org.eclipse.jetty.server.Server@1beef4c: java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+	at com.jfinal.core.JFinal.initActiveRecord(JFinal.java:117)
+	at com.jfinal.core.JFinal.init(JFinal.java:74)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+
+2014-04-24 14:52:06
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 14:52:06
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED JFinal: java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+	at com.jfinal.core.JFinal.initActiveRecord(JFinal.java:117)
+	at com.jfinal.core.JFinal.init(JFinal.java:74)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+
+2014-04-24 14:52:06
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED o.e.j.w.WebAppContext{/,file:/C:/jason/jfinal-angular/WebContent/}: java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+	at com.jfinal.core.JFinal.initActiveRecord(JFinal.java:117)
+	at com.jfinal.core.JFinal.init(JFinal.java:74)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+
+2014-04-24 14:52:06
+[WARN]-[Thread: main]-[org.eclipse.jetty.util.component.AbstractLifeCycle.setFailed()]: FAILED org.eclipse.jetty.server.Server@10cea2e: java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+java.lang.NoSuchMethodError: com.jfinal.plugin.activerecord.ActiveRecordPlugin.setDevMode(Z)V
+	at com.jfinal.core.JFinal.initActiveRecord(JFinal.java:117)
+	at com.jfinal.core.JFinal.init(JFinal.java:74)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:165)
+	at org.zhubao.config.AngularConfig.main(AngularConfig.java:105)
+
+2014-04-24 14:53:58
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 14:57:19
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 14:57:20
+[ERROR]-[Thread: main]-[com.jfinal.core.ActionHandler.handle()]: /user/json
+java.lang.NullPointerException
+	at org.zhubao.interceptor.GlobalInterceptor.intercept(GlobalInterceptor.java:25)
+	at com.jfinal.core.ActionInvocation.invoke(ActionInvocation.java:51)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:73)
+	at org.zhubao.interceptor.FakeStaticHandler.handle(FakeStaticHandler.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.joor.Reflect.on(Reflect.java:514)
+	at org.joor.Reflect.call(Reflect.java:349)
+	at com.jfinal.ext.test.ControllerTestCase.invoke(ControllerTestCase.java:91)
+	at org.zhubao.controller.TestUserController.testUserList(TestUserController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+2014-04-24 14:57:44
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 15:09:23
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 15:19:59
+[WARN]-[Thread: main]-[net.sf.ehcache.CacheManager.configure()]: One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of C:\DOCUME~1\jason.zhu\LOCALS~1\Temp\. Please explicitly configure the diskStore element in ehcache.xml.
+
+2014-04-24 15:25:32
+[ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: init datasource error
+java.sql.SQLException: connect error, url mysql://127.0.0.1:3306/jfinal-angular
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1260)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:405)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:581)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:577)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:78)
+	at com.jfinal.plugin.activerecord.TableInfoBuilder.buildTableInfo(TableInfoBuilder.java:36)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:118)
+	at org.zhubao.model.TestUser.setUp(TestUser.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+2014-04-24 15:25:32
+[ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: dataSource init error
+java.sql.SQLException: connect error, url mysql://127.0.0.1:3306/jfinal-angular
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1260)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:405)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:581)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:577)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:78)
+	at com.jfinal.plugin.activerecord.TableInfoBuilder.buildTableInfo(TableInfoBuilder.java:36)
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:118)
+	at org.zhubao.model.TestUser.setUp(TestUser.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)

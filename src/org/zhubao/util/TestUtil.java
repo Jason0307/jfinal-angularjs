@@ -3,6 +3,9 @@
  */
 package org.zhubao.util;
 
+import com.jfinal.kit.PathKit;
+
+
 
 /**
  * @author Jason.Zhu
@@ -10,11 +13,16 @@ package org.zhubao.util;
  * @email jasonzhu@augmentum.com.cn
  */
 public class TestUtil {
-
-	public static void main(String[] args) {
-		String jobName = "123";
-		String job = "org.zhubao.util.TestJob";
-		QuartzManager.addJob(jobName, job, "0/1 * * * * ?"); 
+	
+	void testPublic(){
+		System.out.println("sss");
 		
+	}
+
+	public static void main(String[] args) throws Exception{
+		/*String jobName = "123";
+		String job = "org.zhubao.util.TestJob";
+		QuartzManager.addJob(jobName, job, "0/1 * * * * ?"); */
+		System.out.println(PathKit.getWebRootPath());
 	}
 }

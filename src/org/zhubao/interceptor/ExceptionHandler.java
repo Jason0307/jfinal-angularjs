@@ -29,9 +29,13 @@ public class ExceptionHandler implements Interceptor {
 		try {
 			ai.invoke();
 		} catch (Exception e) {
-			AngularException ex = (AngularException) e;
+			int statueCode = -1;
+			if(e instanceof AngularException){
+				AngularException ex = (AngularException) e;
+				statueCode = ex.getErrorCode();
+			}
 			JsonResponse jsonResponse = new JsonResponse();
-			jsonResponse.setStatus(ex.getErrorCode());
+			jsonResponse.setStatus(statueCode);
 			jsonResponse.setAdditionalInfo(e.getMessage());
 			controller.renderJson(jsonResponse);
 		}

@@ -23,6 +23,7 @@ public class GlobalInterceptor implements Interceptor {
 		c.setAttr("I18N", I18N.me());
 		String tmp = c.getCookie(Const.I18N_LOCALE);
 		String i18n = c.getRequest().getLocale().toString();
+		System.out.println("i18n : " + i18n);
 		if (!i18n.equals(tmp)) {
 			ai.getController().setCookie(Const.I18N_LOCALE, i18n,
 					Const.DEFAULT_I18N_MAX_AGE_OF_COOKIE);
