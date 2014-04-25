@@ -3,29 +3,31 @@
  */
 package org.zhubao.model;
 
-import org.jmock.Expectations;
-import org.jmock.Mockery;
-import org.jmock.integration.junit4.JMock;
-import org.jmock.integration.junit4.JUnit4Mockery;
+import static org.junit.Assert.assertNotNull;
+
+import java.io.File;
+import java.io.FileOutputStream;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.zhubao.generate.model.GameRecord;
+
+import com.jfinal.ext.render.excel.PoiKit;
 
 /**
  * @author Jason.Zhu
  * @date 2014-4-24
  * @email jasonzhu@augmentum.com.cn
  */
-@RunWith(JMock.class)
-public class TestGameRecord {
-	Mockery context = new JUnit4Mockery();
+public class TestGameRecord extends BaseTest<GameRecord>{
 
 	@Test
-	public void testGameRecord() {
-		/*final User user = context.mock(User.class);
-		context.checking(new Expectations() {
-			{
-				oneOf(user).findById(1);
-			}
-		});*/
+	public void testGameRecord() throws Exception {
+		GameRecord gameRecord = GameRecord.dao.findById(1);
+		System.out.println(gameRecord);
+		assertNotNull(gameRecord);
+		
+		HSSFWorkbook bok =  PoiKit.export("GameRecord", -5 , 1 , new String[]{"recordId", "userId", "gameId", "score", "date"},new String[]{"recordId", "userId", "gameId", "score", "date"},GameRecord.dao.findByList(),5,false);
+	    bok.write(new FileOutputStream(new File("game.xls")));
 	}
 }

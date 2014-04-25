@@ -22,4 +22,7 @@ public interface ConstantsUtil {
 	public static final int DEFAULT_PAGE_NUM = 1;
 	public static final int DEFAULT_PAGE_SIZE = 15;
 	public static final String IMAGE_COLUMN = "icon,image,photo,pic";
+	public static final String LOCALE_CHINA_COOKIE = "zh";
+	public static final String LOCALE_CHINA = "zh_CN";
+	public static final String LOCALE_US = "en_US";
 }
